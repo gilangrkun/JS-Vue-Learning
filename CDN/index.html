@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-Learning</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!-- declarative rendering karena menggunakan double curly braces -->
+    <!-- <div id="vue-app"> -->
+        <!-- <p><b>{{ message }}!</b></p>
+        <p>from: <b>{{ name }}</b></p>
+    </div> -->
+
+    <!-- directive rendering: plain text -->
+    <!-- <div id="vue-app" v-text="message"></div> -->
+
+    <!-- directive rendering: markdown text/langsung membaca tag html untuk di render -->
+    <div id="vue-app" v-html="name"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
