@@ -9,16 +9,19 @@
 </head>
 <body>
     <!-- declarative rendering karena menggunakan double curly braces -->
-    <!-- <div id="vue-app"> -->
-        <!-- <p><b>{{ message }}!</b></p>
-        <p>from: <b>{{ name }}</b></p>
-    </div> -->
+    <div id="vue-app">
+        <!-- <p><b>{{ message }}!</b></p> -->
+        <!-- <p>from: <b>{{ name }}</b></p> -->
+        <p v-if="show">{{ letter }}</p>
+        <p v-else="show">{{ m2 }}</p>
+        <p v-if="name == 'Alexandra'">{{ message }}</p>
+    </div>
 
     <!-- directive rendering: plain text -->
     <!-- <div id="vue-app" v-text="message"></div> -->
 
     <!-- directive rendering: markdown text/langsung membaca tag html untuk di render -->
-    <div id="vue-app" v-html="name"></div>
+    <!-- <div id="vue-app" v-html="name"></div> -->
 
     <script src="app.js"></script>
 </body>
