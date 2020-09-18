@@ -15,6 +15,8 @@
         <p v-if="show">{{ letter }}</p>
         <p v-else="show">{{ m2 }}</p>
         <p v-if="name == 'Alexandra'">{{ message }}</p>
+        <p>Result from {{ one }} + {{ two }} is {{ result }}</p>
+        <button v-on:click="sum(10)">Process</button>
     </div>
 
     <!-- directive rendering: plain text -->
